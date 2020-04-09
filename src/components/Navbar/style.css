@@ -22,7 +22,20 @@
   padding: 0 10px;
 }
 
-.search {
+.search form {
   display: flex;
-  margin: 0 10px;
+  width: 0 10px;
+}
+
+.searchInput {
+  width: 0;
+  border: 0;
+  transition: width 0.5s ease-in;
+}
+
+.searchInput.active {
+  width: 150px;
+}
+.searchInput:focus {
+  outline: none;
 }
