@@ -15,7 +15,7 @@ const Sidebar = (props) => {
     useEffect(() => {
         const posts = blogPost.data;
         setPosts(posts);
-    }, posts);
+    }, [posts]);
 
 
     return (
@@ -25,7 +25,7 @@ const Sidebar = (props) => {
                     <span>About Us</span>
                 </div>
                 <div className="profileImageContainer">
-                    <img src={require('../../blogPostImages/profileImage.jpg')} alt="Post Image" />
+                    <img src={require('../../blogPostImages/profileImage.jpg')} alt="Post" />
                 </div>
                 <div className="cardBody">
                     <p className="personalBio">My name is Alsahid Simms. I am a software developer</p>
@@ -46,7 +46,7 @@ const Sidebar = (props) => {
                     {
                         posts.map(post => {
                             return (
-                                <NavLink to ={`/post/${post.id}`}>
+                                <NavLink key = {post.id} to ={`/post/${post.id}`}>
                                     <div className="recentPost">
                                         <h3>{post.blogTitle}</h3>
                                         <span>{post.postedOn}</span>
