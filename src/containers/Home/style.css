@@ -1,15 +1,21 @@
-.galleryPost{
-    display: flex;
-    justify-content: space-between;
+.galleryPost {
+  display: flex;
+  justify-content: space-between;
 }
 
-.sideImageWrapper div{
-    width: 100%;
-
+.sideImageWrapper div {
+  width: 100%;
 }
 
-.sideImageWrapper div img{
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+.sideImageWrapper div img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
+
+.HomeContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
