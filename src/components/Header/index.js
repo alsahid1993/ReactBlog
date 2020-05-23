@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import SocialIcons from '../Social';
 /**
 * @author
 * @function Header
@@ -13,9 +14,7 @@ const Header = (props) => {
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
             </nav>
-            <div>
-                Social Media Links
-            </div>
+            <SocialIcons />
         </header>
     )
 

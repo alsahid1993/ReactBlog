@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import BlogPost from '../../components/BlogPost'
-import Sidebar from '../../components/Sidebar'
+import Layout from '../../components/Layout'
 /**
 * @author
 * @function Post
@@ -10,12 +10,12 @@ import Sidebar from '../../components/Sidebar'
 const Post = (props) => {
 
     console.log(props);
-    return (
-        <section className="container">
-            <BlogPost {...props}/>
-            <Sidebar />
 
-        </section>
+    return (
+        <Layout>
+            <BlogPost {...props} />
+        </Layout>
+
     )
 
 }

@@ -1,0 +1,23 @@
+.social{
+    display: flex;
+    justify-content:  center;
+    margin: 10px 0;
+}
+
+.instagram:hover{
+    cursor: pointer;
+    color: darksalmon;
+    opacity: 0.6;
+}
+
+.twitter:hover{
+    cursor: pointer;
+    color: deepskyblue;
+    opacity: 0.6;
+}
+
+.facebook:hover{
+    cursor: pointer;
+    color: mediumblue;
+    opacity: 0.6;
+}

@@ -27,7 +27,21 @@ const RecentPosts = (props) => {
                 </div>
 
             </Card>
+            <Card style={{ marginBottom: '20px' }}>
+                <div className="phostImageWrapper">
+                <img src={require('../../../blogPostImages/police.jpg')} alt="Post" />
+                </div>
 
+                <div style={{ textAlign: 'center' }}>
+                    <span>Featured</span>
+                    <h2>Fitness Manatra To Live Fit Life</h2>
+                    <span>Posted on Jan 20 2020 by Keith Blogging'R us</span>
+                    <p>messages.env.summary_text</p>
+
+                    <button>Read More</button>
+                </div>
+
+            </Card>
 
         </div>
     )

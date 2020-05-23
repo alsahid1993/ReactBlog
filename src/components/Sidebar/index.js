@@ -3,6 +3,7 @@ import './style.css';
 import Card from '../UI/Card';
 import blogPost from '../../data/blog.json';
 import { NavLink } from 'react-router-dom';
+import SocialIcons from '../Social';
 /**
 * @author
 * @function Sidebar
@@ -35,6 +36,7 @@ const Sidebar = (props) => {
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }} >
                 <div className="cardHeader">
                     <span>Social Network</span>
+                    <SocialIcons/>
                 </div>
             </Card>
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
@@ -46,7 +48,7 @@ const Sidebar = (props) => {
                     {
                         posts.map(post => {
                             return (
-                                <NavLink key = {post.id} to ={`/post/${post.id}`}>
+                                <NavLink key = {post.id} to ={`/post/${post.slug}`}>
                                     <div className="recentPost">
                                         <h3>{post.blogTitle}</h3>
                                         <span>{post.postedOn}</span>

@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ContactUs from './containers/ContactUS';
 import Post from './containers/Post';
-
+import Visited from './containers/Visited';
 
 
 function App() {
@@ -17,10 +17,11 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        
         <Route path="/" exact component={Home} />
         <Route path = "/contact-us" component={ContactUs}/>
         <Route path = "/post/:postId" component= {Post} />
-        
+        <Route path = "/visited" component ={Visited}/>
       </div>
     </Router>
   );

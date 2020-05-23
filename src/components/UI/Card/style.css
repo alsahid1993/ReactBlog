@@ -2,3 +2,9 @@
   background: #ffff;
   width: 100%;
 }
+
+.phostImageWrapper{
+  padding: 2rem;
+  display: block;
+  margin: auto;
+}
